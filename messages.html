@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard | Messages</title>
+    <meta name="description" content="Admin Dashboard | New Design" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/boxicons.min.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <div class="preloader">
+      <div class="wrapper">
+        <div class="row first">
+          <span style="--i: 0; order: 3"></span>
+          <span style="--i: 1; order: 2"></span>
+          <span style="--i: 2; order: 1"></span>
+          <span style="--i: 3; order: 4"></span>
+        </div>
+        <div class="row second">
+          <span style="--i: 4; order: 3"></span>
+          <span style="--i: 5; order: 2"></span>
+          <span style="--i: 6; order: 1"></span>
+          <span style="--i: 7; order: 4"></span>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <!-- ===== LOGOUT POPUP ===== -->
+      <div class="logout-pop">
+        <header>
+          <span>Admin Dashboard</span>
+          <i class="bx bx-x-circle close-pop"></i>
+        </header>
+        <div class="body">
+          <i class="bx bx-happy"></i>
+          <h2>Thank You For Visiting This Website</h2>
+          <p>Confirm Your Logout</p>
+        </div>
+        <footer>
+          <input type="checkbox" id="ask" class="custom-check" />
+          <label for="ask" class="custom-label">
+            <span></span>
+            Do not ask me again
+          </label>
+          <div class="btns">
+            <button class="confirm">Confirm</button>
+            <button class="close-pop">Cancel</button>
+          </div>
+        </footer>
+      </div>
+      <div class="page">
+        <!-- ====== Navigation Sidebar ====== -->
+        <nav class="navigation">
+          <ul>
+            <li class="logo">
+              <a href="#">
+                <span class="icon"><i class="bx bxl-apple"></i></span>
+                <span class="title">INFORMATICA</span>
+              </a>
+              <div class="toggle">
+                <i class="bx bx-menu"></i>
+              </div>
+            </li>
+
+            <li class="profile">
+              <a href="#">
+                <img src="imgs/profile.jpg" alt="Profile image" />
+                <span class="name">Eldwardo Elric</span>
+                <span class="mail">eldwardo@gmail.com</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="index.html">
+                <span class="icon"><i class="bx bx-home"></i></span>
+                <span class="title">Dashboard</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="analytics.html">
+                <span class="icon"><i class="bx bx-pie-chart"></i></span>
+                <span class="title">Analytics</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="projects.html">
+                <span class="icon"><i class="bx bx-notepad"></i></span>
+                <span class="title">Projects</span>
+              </a>
+            </li>
+
+            <li class="hovered">
+              <a href="messages.html">
+                <span class="icon"><i class="bx bx-mail-send"></i></span>
+                <span class="title">Messages</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="settings.html">
+                <span class="icon"><i class="bx bx-cog"></i></span>
+                <span class="title">Settings</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="logout-btn">
+                <span class="icon"><i class="bx bx-log-out-circle"></i></span>
+                <span class="title">Log-out</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <!-- ====== Main Content ====== -->
+        <main class="main fluid-main">
+          <div class="main-content">
+            <!-- --------- HEADER -------- -->
+            <header class="topbar">
+              <div class="left-content">
+                <div class="toggle">
+                  <i class="bx bx-menu"></i>
+                </div>
+                <div class="details">
+                  <h2>Hello, Eldwardo</h2>
+                  <p class="date">today is Monday, 20 October 2021</p>
+                </div>
+              </div>
+              <div class="right-content">
+                <div class="search">
+                  <i class="bx bx-search-alt-2 search-icon"></i>
+                  <div class="search-box">
+                    <input
+                      type="search"
+                      class="search-input"
+                      placeholder="Search Here..."
+                    />
+                    <button class="search-btn">Search</button>
+                  </div>
+                </div>
+                <div class="user">
+                  <i class="bx bx-user-circle user-icon"></i>
+                  <ul class="user-list">
+                    <li>
+                      <a href="#">
+                        <i class="bx bx-user"></i>
+                        <span>Account</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="bx bx-lock"></i>
+                        <span>Passwords</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="bx bx-group"></i>
+                        <span>Customers</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="bx bx-calendar"></i>
+                        <span>Calendar</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="bx bx-bar-chart-alt-2"></i>
+                        <span>Statistics</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="mode">
+                  <i class="bx bx-moon mode-icon"></i>
+                </div>
+              </div>
+            </header>
+            <!-- ----- COMING SOON SECTION ------ -->
+            <section class="soon">
+              <div class="content">
+                <h1>Coming Soon</h1>
+                <p class="info">
+                  This page is under construction. We're working hard to improve
+                  our website and we'll be ready to launch it after:
+                </p>
+                <div class="time">
+                  <div class="days">
+                    <span class="nb"></span>
+                    <span class="txt">Days</span>
+                  </div>
+                  <div class="hours">
+                    <span class="nb"></span>
+                    <span class="txt">Hours</span>
+                  </div>
+                  <div class="minutes">
+                    <span class="nb"></span>
+                    <span class="txt">Minutes</span>
+                  </div>
+                  <div class="seconds">
+                    <span class="nb"></span>
+                    <span class="txt">Seconds</span>
+                  </div>
+                </div>
+                <form action="#" class="contact">
+                  <p>Subscribe now to get the latest updates</p>
+                  <div class="input">
+                    <input type="email" placeholder="Enter your mail..." />
+                    <input type="submit" value="Notify Me" />
+                  </div>
+                </form>
+                <ul class="tools">
+                  <li><i class="bx bx-group"></i></li>
+                  <li><i class="bx bx-mail-send"></i></li>
+                  <li><i class="bx bxl-messenger"></i></li>
+                </ul>
+              </div>
+            </section>
+            <!-- --------- FOOTER -------- -->
+            <footer class="footer">
+              <p class="copyright">
+                Made by <span>Naim</span> All Rights Reserved &copy; 2023
+              </p>
+              <span class="version">Version 3.2.0</span>
+            </footer>
+          </div>
+        </main>
+      </div>
+    </div>
+    <script src="js/share.js"></script>
+    <script src="js/analytics.js"></script>
+  </body>
+</html>

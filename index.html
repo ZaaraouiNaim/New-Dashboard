@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard | Dashboard</title>
+    <meta name="description" content="Admin Dashboard | New Design" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/boxicons.min.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <div class="preloader">
+      <div class="wrapper">
+        <div class="row first">
+          <span style="--i: 0; order: 3"></span>
+          <span style="--i: 1; order: 2"></span>
+          <span style="--i: 2; order: 1"></span>
+          <span style="--i: 3; order: 4"></span>
+        </div>
+        <div class="row second">
+          <span style="--i: 4; order: 3"></span>
+          <span style="--i: 5; order: 2"></span>
+          <span style="--i: 6; order: 1"></span>
+          <span style="--i: 7; order: 4"></span>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <!-- ===== LOGOUT POPUP ===== -->
+      <div class="logout-pop">
+        <header>
+          <span>Admin Dashboard</span>
+          <i class="bx bx-x-circle close-pop"></i>
+        </header>
+        <div class="body">
+          <i class="bx bx-happy"></i>
+          <h2>Thank You For Visiting This Website</h2>
+          <p>Confirm Your Logout</p>
+        </div>
+        <footer>
+          <input type="checkbox" id="ask" class="custom-check" />
+          <label for="ask" class="custom-label">
+            <span></span>
+            Do not ask me again
+          </label>
+          <div class="btns">
+            <button class="confirm">Confirm</button>
+            <button class="close-pop">Cancel</button>
+          </div>
+        </footer>
+      </div>
+      <div class="page">
+        <!-- ====== Navigation Sidebar ====== -->
+        <nav class="navigation">
+          <ul>
+            <li class="logo">
+              <a href="#">
+                <span class="icon"><i class="bx bxl-apple"></i></span>
+                <span class="title">INFORMATICA</span>
+              </a>
+              <div class="toggle">
+                <i class="bx bx-menu"></i>
+              </div>
+            </li>
+
+            <li class="profile">
+              <a href="#">
+                <img src="imgs/profile.jpg" alt="Profile image" />
+                <span class="name">Eldwardo Elric</span>
+                <span class="mail">eldwardo@gmail.com</span>
+              </a>
+            </li>
+
+            <li class="hovered">
+              <a href="index.html">
+                <span class="icon"><i class="bx bx-home"></i></span>
+                <span class="title">Dashboard</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="analytics.html">
+                <span class="icon"><i class="bx bx-pie-chart"></i></span>
+                <span class="title">Analytics</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="projects.html">
+                <span class="icon"><i class="bx bx-notepad"></i></span>
+                <span class="title">Projects</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="messages.html">
+                <span class="icon"><i class="bx bx-mail-send"></i></span>
+                <span class="title">Messages</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="settings.html">
+                <span class="icon"><i class="bx bx-cog"></i></span>
+                <span class="title">Settings</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="logout-btn">
+                <span class="icon"><i class="bx bx-log-out-circle"></i></span>
+                <span class="title">Log-out</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <!-- ====== Main Content ====== -->
+        <main class="main">
+          <div class="main-content">
+            <!-- --------- HEADER -------- -->
+            <header class="topbar">
+              <div class="left-content">
+                <div class="toggle">
+                  <i class="bx bx-menu"></i>
+                </div>
+                <div class="details">
+                  <h2>Hello, Eldwardo</h2>
+                  <p class="date">today is Monday, 20 October 2021</p>
+                </div>
+              </div>
+              <div class="right-content">
+                <div class="search">
+                  <i class="bx bx-search-alt-2 search-icon"></i>
+                  <div class="search-box">
+                    <input
+                      type="search"
+                      class="search-input"
+                      placeholder="Search Here..."
+                    />
+                    <button class="search-btn">Search</button>
+                  </div>
+                </div>
+                <div class="user">
+                  <i class="bx bx-user-circle user-icon"></i>
+                  <ul class="user-list">
+                    <li>
+                      <a href="#">
+                        <i class="bx bx-user"></i>
+                        <span>Account</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="bx bx-lock"></i>
+                        <span>Passwords</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="bx bx-group"></i>
+                        <span>Customers</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="bx bx-calendar"></i>
+                        <span>Calendar</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="bx bx-bar-chart-alt-2"></i>
+                        <span>Statistics</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="mode">
+                  <i class="bx bx-moon mode-icon"></i>
+                </div>
+              </div>
+            </header>
+            <!-- --------- ADMIN CONTENT --------- -->
+            <div class="admin-content">
+              <section class="banner">
+                <div class="card">
+                  <div class="card-txt">
+                    <div class="number">45320</div>
+                    <div class="name">Customers</div>
+                    <div class="grow">
+                      <i class="bx bx-up-arrow-circle"></i>5.5%
+                    </div>
+                  </div>
+                  <div class="card-icon">
+                    <i class="bx bx-group"></i>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-txt">
+                    <div class="number">1220</div>
+                    <div class="name">Orders</div>
+                    <div class="grow">
+                      <i class="bx bx-down-arrow-circle"></i>3.72%
+                    </div>
+                  </div>
+                  <div class="card-icon">
+                    <i class="bx bx-cart-alt"></i>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-txt">
+                    <div class="number">650</div>
+                    <div class="name">Daily Views</div>
+                    <div class="grow">
+                      <i class="bx bx-up-arrow-circle"></i>1.4%
+                    </div>
+                  </div>
+                  <div class="card-icon">
+                    <i class="bx bx-happy-heart-eyes"></i>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-txt">
+                    <div class="number">$7500</div>
+                    <div class="name">Earnings</div>
+                    <div class="grow">
+                      <i class="bx bx-up-arrow-circle"></i>8.5%
+                    </div>
+                  </div>
+                  <div class="card-icon">
+                    <i class="bx bx-money"></i>
+                  </div>
+                </div>
+              </section>
+              <section class="features">
+                <div class="task-order">
+                  <div class="todo-list" id="todo">
+                    <div class="app">
+                      <header class="heading">
+                        <div>
+                          <h2 class="title">Today Tasks</h2>
+                          <p>Check Your Tasks For Today</p>
+                        </div>
+                        <span class="date"></span>
+                      </header>
+                      <form>
+                        <div class="task-input">
+                          <div class="input-box">
+                            <i class="bx bx-notepad"></i>
+                            <input
+                              type="text"
+                              placeholder="Enter a new task..."
+                            />
+                          </div>
+                          <button type="submit" id="add-btn">
+                            <i class="bx bx-calendar-plus"></i>
+                            <span>Add</span>
+                          </button>
+                        </div>
+                        <div class="info"></div>
+                      </form>
+                      <ul class="tasks">
+                        <li class="display-msg">
+                          <p>
+                            No tasks to display<i class="bx bxs-hand-up"></i>
+                          </p>
+                        </li>
+
+                        <li class="task-content"></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="statistics" id="stats">
+                    <header>
+                      <button id="statistics" class="active">Statistics</button>
+                      <button id="customers">Customers</button>
+                      <span class="switch"></span>
+                    </header>
+                    <div class="list stats show" data-name="statistics">
+                      <ul class="stat-list">
+                        <li>
+                          <div class="title">Orders</div>
+                          <div class="nb">
+                            <span>30% <i class="bx bx-trending-up"></i></span>
+                            <span>10,000</span>
+                          </div>
+                          <div class="progress">
+                            <span data-level="80%"></span>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="title">Tax Deducation</div>
+                          <div class="nb">
+                            <span>16% <i class="bx bx-trending-down"></i></span>
+                            <span>5,000</span>
+                          </div>
+                          <div class="progress">
+                            <span data-level="30%"></span>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="title">Revenue</div>
+                          <div class="nb">
+                            <span>50% <i class="bx bx-trending-up"></i></span>
+                            <span>$70,000</span>
+                          </div>
+                          <div class="progress">
+                            <span data-level="70%"></span>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="title">Yearly Sales</div>
+                          <div class="nb">
+                            <span>75% <i class="bx bx-trending-up"></i></span>
+                            <span>10,000</span>
+                          </div>
+                          <div class="progress">
+                            <span data-level="75%"></span>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                    <ul class="list customers" data-name="customers">
+                      <li>
+                        <div class="img">
+                          <img src="imgs/customer1.jpg" alt="Customer" />
+                        </div>
+                        <div class="text">
+                          <div class="name">Alphons Elric</div>
+                          <div class="country">Tunisia</div>
+                        </div>
+                        <a href="#" class="contact"
+                          ><div class="bx bx-mail-send"></div
+                        ></a>
+                      </li>
+                      <li>
+                        <div class="img">
+                          <img src="imgs/customer2.jpg" alt="Customer" />
+                        </div>
+                        <div class="text">
+                          <div class="name">Roy Mostang</div>
+                          <div class="country">England</div>
+                        </div>
+                        <a href="#" class="contact"
+                          ><div class="bx bx-mail-send"></div
+                        ></a>
+                      </li>
+                      <li>
+                        <div class="img">
+                          <img src="imgs/customer3.jpg" alt="Customer" />
+                        </div>
+                        <div class="text">
+                          <div class="name">David Smith</div>
+                          <div class="country">US</div>
+                        </div>
+                        <a href="#" class="contact"
+                          ><div class="bx bx-mail-send"></div
+                        ></a>
+                      </li>
+                      <li>
+                        <div class="img">
+                          <img src="imgs/customer4.jpg" alt="Customer" />
+                        </div>
+                        <div class="text">
+                          <div class="name">Amit Khan</div>
+                          <div class="country">India</div>
+                        </div>
+                        <a href="#" class="contact"
+                          ><div class="bx bx-mail-send"></div
+                        ></a>
+                      </li>
+                      <li>
+                        <div class="img">
+                          <img src="imgs/customer5.jpg" alt="Customer" />
+                        </div>
+                        <div class="text">
+                          <div class="name">Antonio Bradoli</div>
+                          <div class="country">London</div>
+                        </div>
+                        <a href="#" class="contact"
+                          ><div class="bx bx-mail-send"></div
+                        ></a>
+                      </li>
+                      <li>
+                        <div class="img">
+                          <img src="imgs/customer6.jpg" alt="Customer" />
+                        </div>
+                        <div class="text">
+                          <div class="name">Paul David</div>
+                          <div class="country">Mexico</div>
+                        </div>
+                        <a href="#" class="contact"
+                          ><div class="bx bx-mail-send"></div
+                        ></a>
+                      </li>
+                      <li>
+                        <div class="img">
+                          <img src="imgs/customer7.jpg" alt="Customer" />
+                        </div>
+                        <div class="text">
+                          <div class="name">John Doe</div>
+                          <div class="country">US</div>
+                        </div>
+                        <a href="#" class="contact"
+                          ><div class="bx bx-mail-send"></div
+                        ></a>
+                      </li>
+                      <li>
+                        <div class="img">
+                          <img src="imgs/customer1.jpg" alt="Customer" />
+                        </div>
+                        <div class="text">
+                          <div class="name">Alphons Elric</div>
+                          <div class="country">Tunisia</div>
+                        </div>
+                        <a href="#" class="contact"
+                          ><div class="bx bx-mail-send"></div
+                        ></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="orders">
+                  <header>
+                    <div class="heading">
+                      <h2 class="title">Recent Orders</h2>
+                      <p class="info">Get Your Recent Orders</p>
+                    </div>
+                    <a href="#" class="view-btn">View All</a>
+                  </header>
+                  <div class="table-container">
+                    <table>
+                      <thead>
+                        <tr>
+                          <th>Name</th>
+                          <th>Client</th>
+                          <th>Price</th>
+                          <th>Payment</th>
+                          <th>Status</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Store Design</td>
+                          <td>Facebook</td>
+                          <td>$1100</td>
+                          <td>Paid</td>
+                          <td>
+                            <span class="status delivered">Delivered</span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Dashboard Design</td>
+                          <td>Ministry</td>
+                          <td>$800</td>
+                          <td>Due</td>
+                          <td><span class="status pending">Pending</span></td>
+                        </tr>
+                        <tr>
+                          <td>School Managment</td>
+                          <td>Private School</td>
+                          <td>$1300</td>
+                          <td>Paid</td>
+                          <td><span class="status return">Return</span></td>
+                        </tr>
+                        <tr>
+                          <td>E-Commerce Design</td>
+                          <td>Shop Store</td>
+                          <td>$900</td>
+                          <td>Due</td>
+                          <td>
+                            <span class="status progress">Progress</span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>TO-DO-LIST App</td>
+                          <td>Company X</td>
+                          <td>$300</td>
+                          <td>Due</td>
+                          <td><span class="status pending">Pending</span></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </section>
+              <section class="extra-content">
+                <div class="section latest-chat" id="chat">
+                  <header class="heading">
+                    <h2 class="title">Latest Conversation</h2>
+                    <p class="info">Get Latest Customers Messages</p>
+                  </header>
+                  <div class="chat-content">
+                    <div class="chat-head">
+                      <div class="customer">
+                        <img src="imgs/customer1.jpg" alt="Customer" />
+                        <div class="details">
+                          <div>Alphons Elric</div>
+                          <div>About 3 hours ago</div>
+                        </div>
+                      </div>
+                      <span class="status"></span>
+                    </div>
+                    <ul class="chat-body">
+                      <li class="chat outgoing">
+                        <p>
+                          Hi there <br />
+                          How can We help you today ?
+                        </p>
+                        <span><i class="bx bx-user-circle"></i> </span>
+                      </li>
+                      <li class="chat incoming">
+                        <span
+                          ><img src="imgs/customer1.jpg" alt="Customer" />
+                        </span>
+                        <p>
+                          Hi Informatica, I really have some problems with my
+                          software, could you fix it to me?
+                        </p>
+                      </li>
+                      <li class="chat outgoing">
+                        <p>Yes of course, just give us more details.</p>
+                        <span><i class="bx bx-user-circle"></i> </span>
+                      </li>
+                      <li class="chat incoming">
+                        <span
+                          ><img src="imgs/customer1.jpg" alt="Customer" />
+                        </span>
+                        <p>Thank you, so my problem is...</p>
+                      </li>
+                    </ul>
+                    <div class="chat-input">
+                      <textarea
+                        placeholder="Enter a message..."
+                        required
+                      ></textarea>
+                      <span><i class="bx bx-send"></i></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="section latest-post" id="post">
+                  <header class="heading">
+                    <h2 class="title">Latest Post</h2>
+                    <p class="info">Get Info About Your Latest Post</p>
+                  </header>
+                  <div class="post-content">
+                    <div class="post-head">
+                      <div class="admin">
+                        <i class="bx bx-user-circle user-icon"></i>
+                        <div class="details">
+                          <div>Admin</div>
+                          <div>About 2 hours ago</div>
+                        </div>
+                      </div>
+                      <i class="bx bx-dots-horizontal-rounded more-icon"></i>
+                    </div>
+                    <div class="post-body">
+                      <p>See you in my next project</p>
+                      <img src="imgs/post.jpeg" alt="Post" />
+                    </div>
+                    <div class="post-foot">
+                      <div class="reacts">
+                        <div class="likes">
+                          <span><i class="bx bx-heart"></i>1k</span>
+                          <span><i class="bx bx-comment-dots"></i>500</span>
+                        </div>
+                        <div class="comment-btn">
+                          <i class="bx bx-chevron-down-circle"></i>
+                        </div>
+                      </div>
+                      <ul class="comments">
+                        <li class="comment">
+                          <img src="imgs/customer4.jpg" alt="Customer" />
+                          <div class="content">
+                            <span class="name">John Smith</span>
+                            <p>See you ADMIN &hearts;</p>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="section latest-proj" id="proj">
+                  <header class="heading">
+                    <h2 class="title">Latest Projects</h2>
+                    <p class="info">Navigate Your Latest Projects</p>
+                  </header>
+                  <div class="projects">
+                    <ul class="wrapper">
+                      <li class="project">
+                        <div class="img">
+                          <img src="imgs/proj1.jpg" alt="Project" />
+                        </div>
+                        <div class="text">
+                          <h2 class="title">Project Website</h2>
+                          <div class="info">
+                            <div class="details">
+                              <p>
+                                This Website Is Specially Build To Showcase All
+                                Major JavaScript Projects.
+                              </p>
+                              <div class="btns">
+                                <a href="#"
+                                  ><i class="bx bx-navigation"></i>View</a
+                                >
+                                <a href="#">Share<i class="bx bx-group"></i></a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="project">
+                        <div class="img">
+                          <img src="imgs/proj2.jpg" alt="Project" />
+                        </div>
+                        <div class="text">
+                          <h2 class="title">Project Website</h2>
+                          <div class="info">
+                            <div class="details">
+                              <p>
+                                This Website Is Specially Build To Showcase All
+                                Major JavaScript Projects.
+                              </p>
+                              <div class="btns">
+                                <a href="#"
+                                  ><i class="bx bx-navigation"></i>View</a
+                                >
+                                <a href="#">Share<i class="bx bx-group"></i></a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="project">
+                        <div class="img">
+                          <img src="imgs/proj3.jpg" alt="Project" />
+                        </div>
+                        <div class="text">
+                          <h2 class="title">Project Website</h2>
+                          <div class="info">
+                            <div class="details">
+                              <p>
+                                This Website Is Specially Build To Showcase All
+                                Major JavaScript Projects.
+                              </p>
+                              <div class="btns">
+                                <a href="#"
+                                  ><i class="bx bx-navigation"></i>View</a
+                                >
+                                <a href="#">Share<i class="bx bx-group"></i></a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="project">
+                        <div class="img">
+                          <img src="imgs/proj4.jpeg" alt="Project" />
+                        </div>
+                        <div class="text">
+                          <h2 class="title">Project Website</h2>
+                          <div class="info">
+                            <div class="details">
+                              <p>
+                                This Website Is Specially Build To Showcase All
+                                Major JavaScript Projects.
+                              </p>
+                              <div class="btns">
+                                <a href="#"
+                                  ><i class="bx bx-navigation"></i>View</a
+                                >
+                                <a href="#">Share<i class="bx bx-group"></i></a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="project">
+                        <div class="img">
+                          <img src="imgs/post.jpeg" alt="Project" />
+                        </div>
+                        <div class="text">
+                          <h2 class="title">Project Website</h2>
+                          <div class="info">
+                            <div class="details">
+                              <p>
+                                This Website Is Specially Build To Showcase All
+                                Major JavaScript Projects.
+                              </p>
+                              <div class="btns">
+                                <a href="#"
+                                  ><i class="bx bx-navigation"></i>View</a
+                                >
+                                <a href="#">Share<i class="bx bx-group"></i></a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                    <div class="cntrl">
+                      <i class="bx bxs-hand-left btn" id="prev"></i>
+                      <i class="bx bxs-hand-right btn" id="next"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="section latest-events" id="events">
+                  <header class="heading">
+                    <h2 class="title">Latest Events</h2>
+                    <p class="info">Explore Newly Events</p>
+                  </header>
+                  <ul class="events">
+                    <li class="event">
+                      <img src="imgs/proj4.jpeg" alt="Event" />
+                      <div class="txt">
+                        <a href="#"
+                          >New technologie was presented by X company</a
+                        >
+                        <div class="date">2 days ago</div>
+                      </div>
+                    </li>
+                    <li class="event">
+                      <img src="imgs/proj3.jpg" alt="Event" />
+                      <div class="txt">
+                        <a href="#"
+                          >New technologie was presented by X company</a
+                        >
+                        <div class="date">3 days ago</div>
+                      </div>
+                    </li>
+                    <li class="event">
+                      <img src="imgs/proj2.jpg" alt="Event" />
+                      <div class="txt">
+                        <a href="#"
+                          >New technologie was presented by X company</a
+                        >
+                        <div class="date">4 days ago</div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </section>
+              <ul class="social">
+                <li class="facebook">
+                  <a href="#">
+                    <i class="bx bxl-facebook"></i>
+                    <div class="tip">Facebook</div>
+                  </a>
+                </li>
+                <li class="twitter">
+                  <a href="#">
+                    <i class="bx bxl-twitter"></i>
+                    <div class="tip">Twitter</div>
+                  </a>
+                </li>
+                <li class="instagram">
+                  <a href="#">
+                    <i class="bx bxl-instagram"></i>
+                    <div class="tip">Instagram</div>
+                  </a>
+                </li>
+                <li class="youtube">
+                  <a href="#">
+                    <i class="bx bxl-youtube"></i>
+                    <div class="tip">Youtube</div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!-- --------- FOOTER -------- -->
+            <footer class="footer">
+              <p class="copyright">
+                Made by <span>Naim</span> All Rights Reserved &copy; 2023
+              </p>
+              <span class="version">Version 3.2.0</span>
+            </footer>
+          </div>
+          <!-- --------- MAIN ASIDE -------- -->
+          <aside class="main-aside">
+            <header>
+              <h2>Calendar</h2>
+              <span class="note-icon"><i class="bx bxs-bell"></i></span>
+              <ul class="notes-list">
+                <li class="logo">
+                  <i class="bx bxl-apple"></i>
+                </li>
+                <li>
+                  <i class="bx bx-bell"></i>
+                  <a href="#"
+                    >New feature was added to "Admin Dashboard" project...<span
+                      class="more"
+                      >Read more</span
+                    ></a
+                  >
+                </li>
+                <li>
+                  <i class="bx bx-bell"></i>
+                  <a href="#"
+                    >Client A approve your request about the new design...<span
+                      class="more"
+                      >Read more</span
+                    ></a
+                  >
+                </li>
+                <li>
+                  <i class="bx bx-bell"></i>
+                  <a href="#"
+                    >3 days for "Bootstrap 5.5" INTERNATIONAL MEETING...<span
+                      class="more"
+                      >Read more</span
+                    ></a
+                  >
+                </li>
+                <li>
+                  <i class="bx bx-bell"></i>
+                  <a href="#"
+                    >New design was added by "User 10"...<span class="more"
+                      >Read more</span
+                    ></a
+                  >
+                </li>
+              </ul>
+            </header>
+            <div class="aside-content">
+              <div class="calendar">
+                <header>
+                  <div class="month"></div>
+                  <div class="year"></div>
+                </header>
+                <div class="body">
+                  <ul class="week">
+                    <li>M</li>
+                    <li>T</li>
+                    <li>W</li>
+                    <li>T</li>
+                    <li>F</li>
+                    <li>S</li>
+                    <li>S</li>
+                  </ul>
+                  <ul class="days"></ul>
+                </div>
+                <div class="control">
+                  <span id="prev" class="control-btn"
+                    ><i class="bx bx-chevron-left-circle"></i
+                  ></span>
+                  <div class="time"><span></span></div>
+                  <span id="next" class="control-btn"
+                    ><i class="bx bx-chevron-right-circle"></i
+                  ></span>
+                </div>
+              </div>
+              <div class="events">
+                <div class="event">
+                  <div class="event-head">
+                    <div class="event-date">Oct 20, 2023</div>
+                    <i class="bx bx-dots-horizontal event-plus"></i>
+                  </div>
+                  <ul class="events-list">
+                    <li>
+                      <span class="time">10:00</span>
+                      <div class="detail">
+                        <span>Design</span>
+                        <span>Task Managment</span>
+                      </div>
+                    </li>
+                    <li>
+                      <span class="time">12:00</span>
+                      <div class="detail">
+                        <span>Dribble Shot</span>
+                        <span>Meet Up</span>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="event">
+                  <div class="event-head">
+                    <div class="event-date">Oct 21, 2023</div>
+                    <i class="bx bx-dots-horizontal event-plus"></i>
+                  </div>
+                  <ul class="events-list">
+                    <li>
+                      <span class="time">10:00</span>
+                      <div class="detail">
+                        <span>UX Research</span>
+                        <span>Sleep App</span>
+                      </div>
+                    </li>
+                    <li>
+                      <span class="time">12:00</span>
+                      <div class="detail">
+                        <span>Design</span>
+                        <span>Mobile App</span>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </aside>
+        </main>
+        <span class="draft-btn"><i class="bx bx-pencil"></i></span>
+        <section class="draft">
+          <div class="section">
+            <header class="heading">
+              <h2 class="title">Quick Draft</h2>
+              <p class="info">Write A Draft For Your Ideas</p>
+            </header>
+            <div class="profile">
+              <img src="imgs/profile.jpg" alt="profile" />
+              <div class="txt">
+                <div class="name">Eldwardo Elric</div>
+                <div class="job">Dashboard Admin</div>
+              </div>
+            </div>
+            <form action="#">
+              <label class="input-box">
+                <i class="bx bx-pen"></i>
+                <input type="text" placeholder="Title..." class="input" />
+              </label>
+              <label class="input-box">
+                <i class="bx bx-spreadsheet"></i>
+                <textarea
+                  placeholder="Your thought..."
+                  class="input"
+                ></textarea>
+              </label>
+            </form>
+            <div class="btns">
+              <button class="cancel-btn">Cancel</button>
+              <button class="save-btn">Save</button>
+            </div>
+            <div class="save-popup">
+              <div class="popup-content">
+                <i class="bx bx-x-circle close-icon"></i>
+                <i class="bx bx-check-circle check-icon"></i>
+                <h2>Draft Saved!!</h2>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <script src="js/share.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
